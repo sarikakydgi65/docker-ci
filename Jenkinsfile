@@ -4,6 +4,7 @@ pipeline {
     environment {
         REGISTRY = "localhost:5000"
         IMAGE_NAME = "anil-demo-app"
+        DOCKER = "C:\Users\STUDENT\AppData\Local\Programs\DockerDesktop\resources\bin\docker.exe"
     }
 
     stages {
@@ -15,7 +16,7 @@ pipeline {
 
         stage('2. Application Build & Test') {
             steps {
-                bat 'C:\Users\STUDENT\AppData\Local\Microsoft\WindowsApps\python.exe -m py_compile app.py'
+                bat 'C:\\Users\\STUDENT\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe -m py_compile app.py'
             }
         }
 
