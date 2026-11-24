@@ -15,7 +15,7 @@ pipeline {
 
         stage('2. Application Build & Test') {
             steps {
-                bat 'python -m py_compile app.py'
+                bat 'C:\\Users\\STUDENT\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe -m py_compile app.py'
             }
         }
 
